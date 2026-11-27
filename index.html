@@ -1,0 +1,37 @@
+<!-- ===== MEMBER 4: Garden hub ===== -->
+<section id="garden-hub" class="garden-hub" aria-labelledby="hub-heading">
+  <h2 id="hub-heading">Help the garden grow!</h2>
+  <p>Complete each activity to bring the colour back.</p>
+  <p id="progress-text" aria-live="polite">0 of 3 garden tasks complete</p>
+
+  <div class="garden-sections">
+    <div class="garden-section" id="flower-patch" data-activity="flowerMatch">
+      <img src="assets/flower.svg" alt="" aria-hidden="true" width="80" height="80">
+      <button class="station-btn" data-activity="flowerMatch">Play Flower Match</button>
+      <span class="done-badge" hidden>✓ Done</span>
+    </div>
+
+    <div class="garden-section" id="bee-area" data-activity="helpBee">
+      <img src="assets/bee.svg" alt="" aria-hidden="true" width="80" height="60">
+      <button class="station-btn" data-activity="helpBee">Play Help the Bee</button>
+      <span class="done-badge" hidden>✓ Done</span>
+    </div>
+
+    <div class="garden-section" id="butterfly-area" data-activity="butterflyGarden">
+      <img src="assets/butterfly.svg" alt="" aria-hidden="true" width="80" height="60">
+      <button class="station-btn" data-activity="butterflyGarden">Play Butterfly Garden</button>
+      <span class="done-badge" hidden>✓ Done</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== MEMBER 4: Completion panel ===== -->
+<section id="completion-panel" class="completion-panel" hidden aria-labelledby="done-heading">
+  <h2 id="done-heading">🌈 The garden is colourful again!</h2>
+  <p>Well done — you completed all three tasks!</p>
+  <button id="play-again" class="station-btn">Play Again</button>
+</section>
+<!-- ===== end MEMBER 4 completion ===== -->
+<!-- ===== end MEMBER 4 garden hub ===== -->
