@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magical Garden</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===== MEMBER 1: Shared shell (header, intro, feedback) ===== -->
+<header class="app-header">
+  <h1>Magical Garden</h1>
+  <button id="restart-btn" class="station-btn secondary" type="button">Restart</button>
+</header>
+
+<main id="app">
+  <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+
+  <section id="screen-intro" class="screen" data-screen="intro" aria-labelledby="intro-heading">
+    <img src="assets/garden.svg" alt="" aria-hidden="true" width="160" height="120">
+    <h2 id="intro-heading">The garden has lost its colour!</h2>
+    <p>Can you help? Finish three short activities to bring the colours back.</p>
+    <button id="start-btn" class="station-btn big" type="button">Start</button>
+  </section>
+<!-- ===== end MEMBER 1 shell part 1 ===== -->
+
+<div id="screen-garden" class="screen" data-screen="garden" hidden>
 <!-- ===== MEMBER 4: Garden hub ===== -->
 <section id="garden-hub" class="garden-hub" aria-labelledby="hub-heading">
   <h2 id="hub-heading">Help the garden grow!</h2>
@@ -35,3 +63,17 @@
 </section>
 <!-- ===== end MEMBER 4 completion ===== -->
 <!-- ===== end MEMBER 4 garden hub ===== -->
+</div>
+
+<!-- ===== MEMBER 1: Activity container ===== -->
+<section id="activity-container" class="screen" hidden aria-live="off">
+  <button id="back-btn" class="station-btn secondary" type="button">&larr; Back to garden</button>
+  <h2 id="activity-title" tabindex="-1"></h2>
+  <p id="activity-instructions" class="instructions"></p>
+  <div id="activity-root"></div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
